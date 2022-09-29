@@ -1,38 +1,90 @@
 .App {
+width: 100vw;
+height: 100vh;
+ padding: .8rem;
+   background-color: blanchedalmond;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo{
+  color: brown;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+  
+}
+ .input-todo{
+     width:80vw;
+     padding: .9rem;
+     display: flex;
+     gap: 2rem;
+     align-items: center;
+     justify-content: space-between;
+    }
+
+    input{
+      padding: .6rem;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+
+
+    button{
+      align-items: center;
+      border: 0;
+      background-color: coral;
+          padding: .6rem;
+      width: 40%;
+      font-size: 1.2rem;
+   
+    }
+    button:hover{
+       color: coral;
+       border: 1px solid coral;
+       background-color: white;
+        transition: .1s ease-in-out;
+      }
+      .todoList {
+       /* flex: 70%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+      }
+.main-content {
+  width: 500px;
+  height: 50px;
+  display: flex;
   color: white;
+  margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content .content {
+  flex: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content .content span {
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: tomato;
+}
+
+.main-content button {
+  flex: 20%;
+  height: 100%;
+  border: none;
+  background-color: lightseagreen;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  cursor: pointer;
 }
